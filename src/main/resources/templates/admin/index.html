@@ -9,6 +9,20 @@
     <title th:text="${username}">xx</title>
 </head>
 <body>
-<h1 th:text="${username}">Hello World</h1>
+<h3 th:text="${username}">Hello World</h3>
+<h3 th:text="${user.id}">id</h3>
+<h3 th:text="${user.name}">name</h3>
+<h3 th:text="${user.email}?:4466">email</h3>
+<h3 th:text=" #{message.mobile}">email</h3>
+<h3 th:text=" #{message.job}">email</h3>
+<h3 th:text=" #{language.zh}">email</h3>
+
+<p>
+    Today is: <span th:text="${#calendars.format(today,'yyyy-MM-dd')}">13 May 2011</span>
+</p>
+
+<p>
+    Today is: <span th:text="${#calendars.format(today,'dd MMMM yyyy')}">13 May 2011</span>
+</p>
 </body>
 </html>

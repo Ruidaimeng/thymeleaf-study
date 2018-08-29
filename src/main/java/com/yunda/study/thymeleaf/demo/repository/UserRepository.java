@@ -32,7 +32,6 @@ public interface UserRepository {
 	 * @return
 	 */
 	User getUserById(Long id);
-	
 	/**
 	 * 获取用户列表
 	 * @return
